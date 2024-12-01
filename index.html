@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/DragonBall.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Potfólio</title>
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <video autoplay muted loop id="background-video">
+        <source src="./Assets/kameHouse.mp4" type="video/mp4">
+    </video>
+    <!-- Menu para navegação-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Daniel</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">Sobre</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Habilidades</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projetos</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contato</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Habilides</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contato</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="./Assets/gogeta3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Olá, eu sou o
+                    <span>Daniel</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    Eu sou
+                    <span class="typewriter-text"></span>
+                    <label for="ooooo"></label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias totam ipsum, dolore enim iste id vitae eum ad explicabo error suscipit, qui, in eos unde nihil harum adipisci? Dicta.</p>
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100"> 
+                    <button>lero lero</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão Sobre-mim -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"  data-aos="fade-up" data-aos-duration="1200"><span>Sobre mim</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="./Assets/HomeImg.png"alt="">
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">Designing is my passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus recusandae labore sit facilis, quae similique eligendi quas voluptatem, necessitatibus iure id atque debitis odit iusto sint numquam cum quo optio.
+                    </p>
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão de Skills -->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Minhas Habilidades</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic"  data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        Skills Reflect Our knowledge
+                    </div>
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim magnam amet cumque maxime eos cupiditate ipsa asperiores, voluptatibus tenetur libero consequuntur facere nihil, nulla dolores hic necessitatibus modi, rem ad!</p>
+                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="num">10</div>
+                        <div class="exp">
+                            Years of <br/>
+                            Experience
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">CSS</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">JavaScript</div>
+                        <div class="per"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">70%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">PHP</div>
+                        <div class="per"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">60%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão de Projetos -->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Meus Projetos</span></div>
+            <div class="boxes">
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Web Devlopment</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas enim corporis facere laborum quia, perspiciatis ratione minima pariatur asperiores dolorem perferendis libero consequatur repellendus inventore voluptatum quisquam reprehenderit ab?</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="topic">Digital Marketing</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas enim corporis facere laborum quia, perspiciatis ratione minima pariatur asperiores dolorem perferendis libero consequatur repellendus inventore voluptatum quisquam reprehenderit ab?</p>
+                </div>
+                <div class="box"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Graphic Design</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas enim corporis facere laborum quia, perspiciatis ratione minima pariatur asperiores dolorem perferendis libero consequatur repellendus inventore voluptatum quisquam reprehenderit ab?</p>
+                </div>
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                    <div class="icon">
+                        <i class="fas fa-android"></i>
+                    </div>
+                    <div class="topic">Icon Design</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas enim corporis facere laborum quia, perspiciatis ratione minima pariatur asperiores dolorem perferendis libero consequatur repellendus inventore voluptatum quisquam reprehenderit ab?</p>
+                </div>
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="topic">Photography</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas enim corporis facere laborum quia, perspiciatis ratione minima pariatur asperiores dolorem perferendis libero consequatur repellendus inventore voluptatum quisquam reprehenderit ab?</p>
+                </div>
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="topic">Apps Devlopment</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas enim corporis facere laborum quia, perspiciatis ratione minima pariatur asperiores dolorem perferendis libero consequatur repellendus inventore voluptatum quisquam reprehenderit ab?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Contato -->
+    <section class="contact" id="contact">
+        <div class="contact">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Me chame</span>
+            </div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500">Have any Project?</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, maxime magnam provident atque distinctio delectus officiis asperiores voluptatum corporis quia, ut iusto sint sed optio sunt itaque unde tenetur architecto?</p>
+                <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <button>Lets Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>Created By
+                <a href="#">procoder09</a>
+                &#169; 2024 All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
