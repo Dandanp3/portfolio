@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Evita rolagem horizontal */
-    background-image: url('./Assets/kameHouse.jpg'); /* Caminho da imagem */
+    background-image: url('./Assets/dandanthumb.jpg'); /* Caminho da imagem */
     background-size: cover; /* Faz a imagem preencher o espaço */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -35,13 +35,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #11c1ec;
+    background: #7e0000;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #11c1ec;
+    background: #7e0000;
 }
 
 /* Barra de navegação */
@@ -67,7 +67,7 @@ nav {
 
 .logo span {
     color: white;
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 2px white;
 }
 
 .hamburg,
@@ -103,7 +103,7 @@ nav {
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #11c1ec;
+    background-color: #fa6060;
     transition: 0.2s linear;
 }
 
@@ -111,7 +111,7 @@ nav {
     width: 100%;
 }
 .nav-container .links:hover {
-    color: #11c1ec;
+    color: #7e0000;
 }
 
 .dropdown {
@@ -137,7 +137,7 @@ nav {
 }
 
 .dropdown .links a:hover {
-    background-color: #11c1ec;
+    background-color: #7e0000;
 }
 
 section {
@@ -154,16 +154,16 @@ section .main-container {
 
 .main-container .image {
     width: 500px;
-    height: 70vh;
+    height: 52vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 800px #11c1ec; 
+    box-shadow: 0 0 800px #7e0000; 
+    position: relative;
+    top: 30px;
 }
 
 .main-container .image img {
     width: 100%;
-    position: relative;
-    bottom: 160px;
 }
 
 .main-container .image:hover {
@@ -188,12 +188,12 @@ section .main-container {
 }
 
 .content h1 {
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    font-size: clamp(1rem, rem + 5vw, 1.8rem);
 }
 
 .content h1 span {
-    color: #11c1ec;
-    text-shadow: 0 0 3px #11c1ec;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
 
 .content .typewriter {
@@ -202,13 +202,14 @@ section .main-container {
 }
 
 .content .typewriter-text {
-    color: #11c1ec;
+    color: #dd5a5a;
     text-shadow: 0 20 10px #11c1ec #114bec;
 }
 
 .content p {
-    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    font-size: 20px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .social-links i {
@@ -218,9 +219,9 @@ section .main-container {
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid #114bec;
+    border: 0.2rem solid #dd5a5a;
     border-radius: 50%;
-    color: #114bec;
+    color: #ffffff;
     margin: 5px 15px;
     font-size: 1.5rem;
     transition: 0.2s linear;
@@ -228,9 +229,9 @@ section .main-container {
 
 .social-links i:hover {
     scale: 1.3;
-    color: rgb(255, 247, 247);
-    background-color: #114bec;
-    filter: drop-shadow(0 0 70px #114bec);
+    color: rgb(0, 0, 0);
+    background-color: #7e0000;
+    filter: drop-shadow(0 0 70px #7e0000);
 }
 
 .content button {
@@ -254,7 +255,7 @@ section .main-container {
     border: 2px solid #114bec;
     background: transparent;
     font-weight: 700;
-    box-shadow: 0 0 70px #114bec;
+    box-shadow: 0 0 70px rgb(139, 0, 0);
 }
 
 /* Sessao sobre */
@@ -288,7 +289,7 @@ section .title span::after {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #114bec;
+    background: #dd5a5a;
     left: 0;
     bottom: 0;
 }
@@ -302,9 +303,8 @@ section .title span::after {
     width: 45%;
 }
 .about .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
+    height: 512px;
+    width: 461px;
     border-radius: 12px;
 }
 .about-details .right {
@@ -315,10 +315,14 @@ section .topic {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
 .about-details .right p {
+    font-size: 18px;
     text-align: justify;
     color: white;
+    margin-bottom: 1em; /* Adiciona espaço entre os parágrafos */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
 section .button {
     margin: 16px 0;
@@ -329,16 +333,16 @@ section .button button {
     border-radius: 4px;
     font-size: 25px;
     font-weight: 400;
-    background: #114bec;
+    background: #b10707;
     color: #fff;
     border: 2px solid transparent;
     cursor: pointer;
     transition: all 0.4s ease;
 }
 section .button button:hover {
-    border-color: #114bec;
+    border-color: rgb(139, 0, 0);
     background-color: #fff;
-    color: #114bec;
+    color: rgb(139, 0, 0);
 }
 
 .skills {
@@ -355,9 +359,16 @@ section .button button:hover {
 .skills-details .text {
     width: 50%;
 }
-.skills-details p{
-    color: white;
+.skills-details .text .topic {
+    color: rgb(255, 0, 0); /* Vermelho vibrante */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+}
+.skills-details p {
+    color: rgb(255, 255, 255); /* Branco puro */
+    font-size: 20px;
+    font-weight: bold;
     text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra preta mais sutil */
 }
 .skills .skills-details .experience {
     display: flex;
@@ -365,15 +376,17 @@ section .button button:hover {
     margin: 0 10px;
 }
 .skills-details .experience .num {
-    color: white;
+    color: rgb(255, 255, 255); /* Branco puro */
     font-size: 80px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Sombra mais forte para destaque */
 }
 .skills-details .experience .exp {
-    color: white;
+    color: rgb(255, 255, 255); /* Branco puro */
     margin-left: 20px;
     font-size: 18px;
     font-weight: 500;
     margin: 0 6px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra sutil */
 }
 .skills-details .boxes {
     width: 45%;
@@ -387,11 +400,12 @@ section .button button:hover {
 }
 .skills-details .boxes .topic {
     font-size: 20px;
-    color: #114bec;
+    color: #ff0000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
 .skills-details .boxes .per{
     font-size: 60px;
-    color: #114bec;
+    color: #ffffff;
 }
 
 .services .boxes {
@@ -409,15 +423,13 @@ section .button button:hover {
     cursor: default;
     color: white;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 .services .boxes .box:hover {
-    background: #114bec;
+    background: #c70000;
     color: #fff;
 }
-.services .boxes .box .icon {
-    height: 50px;
-    width: 50px;
-    background: #114bec;
+.services .boxes .box .icon image{
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
@@ -426,8 +438,16 @@ section .button button:hover {
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
+
+/* ICONES */
+
+.costaSegura {
+    height: 120px;
+    width: 128px;
+}
+
+
 .boxes .box:hover .icon {
-    background-color: #114bec;
     color: white;
 }
 .services .boxes .box:hover .topic,
@@ -452,12 +472,24 @@ section .button button:hover {
     text-align: center;
     margin: auto;
 }
+.contact .contact .text p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+}
+
+.contact .contact .text .topic {
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+}
+
 .contact .button button {
-    background-color: #114bec;
+    background-color: #dd5a5a;
 }
 
 footer {
-    background: #114bec;
+    background: #c70000;
     padding: 15px 0;
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
