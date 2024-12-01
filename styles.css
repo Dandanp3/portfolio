@@ -11,23 +11,18 @@
 
 body {
     width: 100%;
-    height: 100vh; /* Garante que o body ocupe a altura total da janela */
-    background-color: black;
-    overflow-x: hidden; /* Impede rolagem horizontal */
-    margin: 0; /* Remove margens extras */
+    height: 100vh; /* Garante que ocupe toda a altura da janela */
+    margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    background-image: url('./Assets/kameHouse.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem preencher o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Faz a imagem ficar fixa ao rolar a página */
 }
 
 /* Estilo do vídeo de fundo */
-#background-video {
-    position: fixed; /* Fixa o vídeo no fundo da tela */
-    top: 0;
-    left: 0;
-    width: 100%; /* Faz o vídeo ocupar 100% da largura */
-    height: 100%; /* Faz o vídeo ocupar 100% da altura */
-    object-fit: cover; /* Ajusta o vídeo sem distorcer */
-    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-}
 
 /* Scroll da pagina */
 
@@ -71,8 +66,8 @@ nav {
 }
 
 .logo span {
-    color: #11c1ec;
-    text-shadow: 0 0 2px #11c1ec;
+    color: white;
+    text-shadow: 0 0 2px #fff;
 }
 
 .hamburg,
@@ -433,16 +428,16 @@ section .button button:hover {
 }
 .boxes .box:hover .icon {
     background-color: #114bec;
-    color: #114bec;
+    color: white;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
-    color: #114bec;
+    color: white;
     transition: all 0.4s ease;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
-    color: #114bec;
+    color: white;
 }
 /* Contato */
 .contact {
