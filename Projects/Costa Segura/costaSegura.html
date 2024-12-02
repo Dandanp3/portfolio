@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/TurnoGrannyIcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio | Costa Segura</title>
+</head>
+<body>
+    <!-- Menu para navegação-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Costa Segura</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="/index.html">Home</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="./Assets/costaseguraicon.png" alt="">
+            </div>
+            <div class="content">
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Projeto de aluguel de barcos no rio Capibaribe, onde usuários coletam resíduos durante os passeios. O lixo é convertido em pontos para recompensas, unindo lazer e preservação ambiental de forma interativa.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão Sobre o Projeto -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"  data-aos="fade-up" data-aos-duration="1200"><span>Sobre</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <video src="./Assets/CostaSeguraReview.mp4" controls onclick="openVideoModal(this)"></video>
+                </div>
+                <div id="videoModal" class="modal" onclick="closeVideoModal()">
+                    <div class="modal-content" onclick="event.stopPropagation()">
+                        <span class="close" onclick="closeVideoModal()">&times;</span>
+                        <video id="modalVideo" controls autoplay></video>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">Uma Iniciativa Sustentável para Transformar o Capibaribe</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        O Projeto Costa Segura tem como objetivo principal a redução dos resíduos no rio Capibaribe, incentivando ações ambientais por meio de um sistema de recompensas. Baseado na ideia de que recompensas podem estimular a liberação de dopamina, o projeto combina lazer e preservação ambiental de forma inovadora.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        Após o cadastro no aplicativo, cada usuário recebe um código único para identificação. Por meio do app, é possível alugar barcos e retirar utensílios fornecidos pela empresa para a coleta de resíduos. Ao final do passeio, o lixo coletado é pesado, e o usuário acumula ecomoedas, a moeda exclusiva do aplicativo.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        Essas moedas podem ser trocadas por descontos em lojas parceiras, disponíveis na aba de brindes. O app também permite acompanhar o progresso do usuário, como o total de resíduos coletados e metas a serem alcançadas, promovendo um engajamento contínuo na preservação do rio.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        O projeto busca não apenas limpar o Capibaribe, mas também engajar a comunidade de forma interativa, gerando impacto social e ambiental positivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Projetos -->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Link</span></div>
+            <div class="boxes">
+
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <a href="https://mobilidadeacessivel.netlify.app/" target="_blank" class="box-link">
+                        <div class="icon">
+                            <img src="./Assets/costaseguraicon.png" alt="">
+                        </div>
+                        <div class="topic">Costa Segura | Repositório</div>
+                        <p>Descubra todos os detalhes e tecnologias por trás deste projeto acessando o repositório. Lá, você encontrará informações completas sobre sua estrutura, funcionalidades e como foi desenvolvido.</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Contato -->
+    <section class="contact" id="contact">
+        <div class="contact">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Me chame</span>
+            </div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500">Tem interesse? Entre em contato!</div>
+                <p>Se você se interessou pelo meu perfil e gostaria de conversar sobre possíveis colaborações ou oportunidades, fique à vontade para me contatar pelo LinkedIn, Instagram ou por e-mail. Estou sempre aberto a novas conexões e desafios profissionais!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>Criado por
+                <a href="https://github.com/Dandanp3">dandanp3</a>
+                &#169; 2024</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
