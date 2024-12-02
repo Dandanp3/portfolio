@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/TurnoGrannyIcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Potfólio</title>
+</head>
+<body>
+    <!-- Menu para navegação-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Mobilidade Acessível</span>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="./Assets/mob.png" alt="">
+            </div>
+            <div class="content">
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Foi meu primeiro projeto da faculdade, desenvolvido na disciplina de Frontend e Frameworks. O objetivo era ajudar cadeirantes e deficientes físicos a encontrar rotas e locais acessíveis, usando a API Mapbox para traçar rotas e pontos de acessibilidade, além de React para o site e React Native para o app.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mobilidade.acessivel/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão Sobre o Projeto -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"  data-aos="fade-up" data-aos-duration="1200"><span>Sobre</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="./Assets/mobGpsPrint.png"alt="" id="imageModalTrigger">
+                </div>
+                <div id="imageModal" class="modal">
+                    <span class="close" id="closeModal">&times;</span>
+                    <img class="modal-content" id="expandedImage">
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">Facilitando a Locomoção com Tecnologia</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        O projeto "Mobilidade Acessível" surgiu inicialmente como um desafio de design, com o objetivo de criar interfaces para dispositivos móveis, computadores e smartwatches, utilizando a ferramenta Figma. Posteriormente, na disciplina de Frontend, a missão foi expandida para a implementação prática dessas telas, transformando-as em sites funcionais para computadores e dispositivos móveis.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        Durante o desenvolvimento, além da necessidade de criar o frontend completo do site, busquei integrar funcionalidades essenciais para a experiência do usuário, com foco em acessibilidade. Um dos maiores desafios foi garantir que a funcionalidade de GPS funcionasse corretamente. Para isso, explorei várias APIs gratuitas e optei pela integração com o Mapbox, que ofereceu recursos como geolocalização, rotas e até autocomplete nas buscas, tornando o site ainda mais intuitivo e acessível.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        O resultado final permite que o usuário compartilhe sua localização atual e trace rotas acessíveis para seu destino. A seguir, você encontrará o link para o site hospedado gratuitamente no Netlify, onde é possível explorar o projeto de forma interativa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Projetos -->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Link</span></div>
+            <div class="boxes">
+
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <a href="https://mobilidadeacessivel.netlify.app/" target="_blank" class="box-link">
+                        <div class="icon">
+                            <img src="./Assets/mob.png" alt="">
+                        </div>
+                        <div class="topic">Mobilidade Acessível</div>
+                        <p>Explore agora e descubra um mundo de possibilidades com a Mobilidade Acessível. Clique aqui e seja bem-vindo à experiência que transforma a forma de se locomover!</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Contato -->
+    <section class="contact" id="contact">
+        <div class="contact">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Me chame</span>
+            </div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500">Tem interesse? Entre em contato!</div>
+                <p>Se você se interessou pelo meu perfil e gostaria de conversar sobre possíveis colaborações ou oportunidades, fique à vontade para me contatar pelo LinkedIn, Instagram ou por e-mail. Estou sempre aberto a novas conexões e desafios profissionais!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>Criado por
+                <a href="https://github.com/Dandanp3">dandanp3</a>
+                &#169; 2024</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
