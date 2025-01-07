@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/moon_1679090.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio | Moon Knight</title>
+</head>
+<body>
+    <!-- Menu para navegação-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Moon Knight</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="/index.html">Home</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="./Assets/mob.png" alt="">
+            </div>
+            <div class="content">
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Sempre fui apaixonado pelo universo dos jogos e, após explorar diferentes engines, encontrei no Game Maker e na linguagem GML a combinação ideal para o que eu queria criar. O design pixelado 2D sempre me encantou, o que me motivou ainda mais.</p>
+
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Decidi criar um RPG 2D inspirado no Cavaleiro da Lua, um personagem com uma história rica e um psicológico intrigante. O objetivo foi trazer uma abordagem mais leve e divertida, algo que nunca foi explorado em jogos desse personagem.</p>
+                    
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Criei sprites autorais para o Cavaleiro da Lua, Khonshu e outros personagens, enquanto alguns recursos, como cenários, foram retirados de fontes gratuitas, já que ainda enfrento desafios na criação de mapas.</p>
+                    
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Este é um projeto pessoal, sem intenção de publicá-lo ou divulgá-lo amplamente. É um trabalho que estou fazendo por paixão e aprendizado.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão Sobre o Projeto -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"  data-aos="fade-up" data-aos-duration="1200"><span>Sobre</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <video src="./Assets/videoApr.mp4" controls onclick="openVideoModal(this)"></video>
+                </div>
+                <div id="videoModal" class="modal" onclick="closeVideoModal()">
+                    <div class="modal-content" onclick="event.stopPropagation()">
+                        <span class="close" onclick="closeVideoModal()">&times;</span>
+                        <video id="modalVideo" controls autoplay></video>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">Facilitando a Locomoção com Tecnologia</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        A história deste jogo gira em torno de Marc Spector, um homem marcado por um passado turbulento e uma vida cheia de conflitos internos. Desde jovem, Marc enfrentou a dor da perda de seu irmão mais novo, e a relação com sua mãe deteriorou-se completamente após sua morte. Em vez de amor, ele era alvo de constantes palavras de raiva e culpa, com a mãe sempre deixando claro que o via como responsável pela tragédia. Nos aniversários de Marc, ela sequer participava, e suas palavras apenas reforçavam a ideia de que ele sentia inveja do irmão falecido. Esses episódios geraram uma profunda crise emocional em Marc, culminando em momentos de grande estresse e violência física, em que ele, ainda criança, foi agredido pela mãe.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        Foi nesse contexto de sofrimento que Marc desenvolveu uma segunda personalidade: Steven Grant, um personagem que ele criou com base no nome de um explorador e aventureiro de um filme. Steven representava a parte “boa” da vida de Marc, acreditando que sua mãe o amava, sem perceber o ódio que ela realmente nutria por ele. Mesmo após a morte de sua mãe, Steven continuava acreditando que ela ainda estava viva, criando um contraste profundo entre as duas personalidades.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        Com as trocas de personalidade se tornando mais frequentes e intensas, Marc seguiu um caminho sombrio e se tornou mercenário. Durante uma missão no Egito, seu parceiro o traiu, e Marc, à beira da morte, arrastou-se até um templo antigo. Nesse momento, uma voz em sua mente, a de Khonshu, o deus da lua, apareceu e fez-lhe uma proposta: salvar sua vida em troca de um pacto. Marc juraria proteger os viajantes da noite e se tornaria o punho de vingança de Khonshu, trazendo justiça para aqueles que causassem mal aos inocentes. Assim, Marc se transformou no Cavaleiro da Lua.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        No jogo, a história se concentra no momento em que Marc adquire seus poderes e começa sua jornada como Cavaleiro da Lua. Ao longo dessa trajetória, os jogadores testemunham as trocas de personalidade de Marc, que alterna entre Marc, Steven e também Jake Lockley, outra de suas personalidades. Essas trocas geram diálogos intrigantes e muitas vezes engraçados e inesperados com outros personagens, trazendo um tom de humor e estranheza para as interações.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="100">
+                        Este jogo não se foca nas origens de Marc, mas sim no momento em que ele já possui os poderes e enfrenta os desafios de sua nova vida, equilibrando a luta contra os inimigos e os conflitos internos de suas múltiplas personalidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Projetos -->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Link</span></div>
+            <div class="boxes">
+
+                <div class="box"   data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <a href="https://mobilidadeacessivel.netlify.app/" target="_blank" class="box-link">
+                        <div class="icon">
+                            <img src="./Assets/mob.png" alt="">
+                        </div>
+                        <div class="topic">Moon Knight</div>
+                        <p>O jogo ainda está em fase de desenvolvimento e, por enquanto, não está disponível para download. Assim que o projeto for finalizado, o link para o download será disponibilizado nesta página!</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Contato -->
+    <section class="contact" id="contact">
+        <div class="contact">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Me chame</span>
+            </div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500">Tem interesse? Entre em contato!</div>
+                <p>Se você se interessou pelo meu perfil e gostaria de conversar sobre possíveis colaborações ou oportunidades, fique à vontade para me contatar pelo LinkedIn, Instagram ou por e-mail. Estou sempre aberto a novas conexões e desafios profissionais!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>Criado por
+                <a href="https://github.com/Dandanp3">dandanp3</a>
+                &#169; 2024</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
