@@ -16,6 +16,14 @@ const projects = [
     demo: "#",
   },
   {
+    title: "The Eco | Bot",
+    description:
+      "Bot de RPG desenvolvido em Python sob encomenda, oferecendo uma experiência completa de RPG no Discord. Permite criação e gerenciamento de fichas, cálculo de atributos e modificadores raciais, além de rolagens de dados avançadas considerando equipamentos e habilidades. Inclui um Market interno, com itens que impactam diretamente nos atributos e na defesa, e sistemas de XP, níveis, PE, vínculos e dinheiro, garantindo progressão contínua. Com comandos de ataques, perícias e habilidades, o bot proporciona uma jogabilidade estratégica e interativa, sendo modular e fácil de expandir para novas funcionalidades.",
+    tags: ["Python"],
+    github: "#",
+    demo: "#",
+  },
+  {
     title: "Jeff | Bot",
     description:
       "Jeff é um bot de Discord feito em Python, utilizando bibliotecas como discord.py e Pillow para gerar imagens e GIFs dinâmicos, com foco em diversão e progressão, trazendo mecânicas que mantêm a comunidade ativa e engajada, incluindo sistema de pesca para colecionar peixes raros, apostas e minigames para arriscar treliças em jogos divertidos, gacha de itens e pets para desbloquear recompensas únicas e álbum de figurinhas para colecionar e trocar figurinhas exclusivas.",
