@@ -41,7 +41,7 @@ export function Contact() {
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Button size="lg" className="animate-glow" asChild>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniel.pyoliverp@gmail.com&su=Contato%20Profissional&body=Olá%20Daniel!"">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniel.pyoliverp@gmail.com&su=Contato%20Profissional&body=Olá%20Daniel!">
                 <Mail className="h-5 w-5 mr-2" />
                 Email
               </a>
