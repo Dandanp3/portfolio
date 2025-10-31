@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dandanp3 | Desenvolvedor Full Stack",
-  description: "Portfólio de Dandanp3 - Desenvolvedor Full Stack especializado em Python, Django, React e mais",
+  title: "Dandanp3 | Desenvolvedor Backend",
+  description: "Portfólio de Dandanp3 - Desenvolvedor Backend especializado em Python, Django, Express e mais",
   generator: "v0.app",
 }
 
