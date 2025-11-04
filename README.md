@@ -1,6 +1,6 @@
-# Portfolio Dandanp3 🚀
+# Portfolio 
 
-Portfolio pessoal moderno e interativo desenvolvido com Next.js 16, apresentando um design sofisticado com animações dinâmicas e sistema de temas.
+Portfolio pessoal interativo desenvolvido com Next.js 16, apresentando um design sofisticado com animações dinâmicas e sistema de temas.
 
 ## ✨ Características
 
