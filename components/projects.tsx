@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react"
 
-// Array de projetos - facilmente editável
+// Projetos 
 const projects = [
   {
     title: "Digidex",
